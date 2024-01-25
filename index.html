@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chumalink Investments</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333; /* Slightly darker color */
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1c6373;
+        }
+
+        .contact-dropdown {
+            display: none;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .contact-dropdown a {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Chumalink Investments</h1>
+
+        <p>Chumalink Investments, a subsidiary of TrickalHoldings Company, offers investment opportunities with competitive returns and reliability. Our investment platform is designed to provide a secure and rewarding experience for our clients. With a commitment to transparency and customer satisfaction, Chumalink Investments is your trusted partner for financial growth.</p>
+
+        <button onclick="getStarted()">Get Started</button>
+
+        <div class="contact-dropdown" id="contactDropdown">
+            <a href="tel:+09997407598">09997407598</a>
+            <a href="tel:+0883230889">0883230889</a>
+            <a href="tel:+0990002091">0990002091</a>
+            <a href="mailto:thalapatrick2003@gmail.com">thalapatrick2003@gmail.com</a>
+            <a href="mailto:thalapatrick@trickalholdings.net">thalapatrick@trickalholdings.net</a>
+            <a href="mailto:mavel@trickalholdings.net">mavel@trickalholdings.net</a>
+            <a href="mailto:Cmike@trickalholdings.net">Cmike@trickalholdings.net</a>
+            <a href="mailto:trickal@chumalink.com">trickal@chumalink.com</a>
+            <a href="https://www.facebook.com/chumalink.mw" target="_blank">Facebook: chumalink.mw</a>
+            <a href="https://www.facebook.com/trickalhodlings.mw" target="_blank">Facebook: trickalhodlings.mw</a>
+        </div>
+
+        <button onclick="toggleContactDropdown()">Contact Us</button>
+    </div>
+
+    <script>
+        function getStarted() {
+            window.location.href = "landing.html";
+        }
+
+        function toggleContactDropdown() {
+            var dropdown = document.getElementById("contactDropdown");
+            dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
